@@ -65,6 +65,9 @@ public class Lab9 {
 		System.out.printf("Average price per item in order was $%.2f\n", averageCost(cost));
 		System.out.printf("Highest price item was $%.2f\n", highestCost(cost));
 		System.out.printf("Lowest price item was $%.2f\n", lowestCost(cost));
+		
+		//close scanner object
+		in.close();
 	}
 
 	public static HashMap<String, Double> makeMyInventory() {
@@ -86,6 +89,8 @@ public class Lab9 {
 
 	}
 
+	
+	//Method to calculate the avaerage cost
 	public static double averageCost(ArrayList<Double> cost) {
 
 		double sum = 0;
